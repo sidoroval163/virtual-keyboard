@@ -1,0 +1,72 @@
+textarea {
+  display: block;
+  width: 730px;
+  height: 20vh;
+  margin: 20px auto 0;
+}
+#keyboard {
+  width: 950px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto 0;
+  padding: 5px 5px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  background-color: #42494f;
+}
+#keyboard::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.k-key {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  background-color: #232a30aa;
+  border-radius: 5px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+
+  margin: 3px;
+  padding: 3px;
+  float: left;
+}
+.k-key::selection {
+  background: transparent;
+}
+
+.clearfix {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.active {
+  background: orange;
+}
+.activat {
+  background: red;
+}
+#keyboard > div.k-key.Space {
+  width: 500px;
+}
+#keyboard > div.k-key.Backspace {
+  width: 150px;
+}
+#keyboard > div.k-key.Enter {
+  width: 200px;
+}
+#keyboard > div.k-key.ShiftLeft,
+div.k-key.ShiftRight {
+  width: 135px;
+}
